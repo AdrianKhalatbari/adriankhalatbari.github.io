@@ -295,6 +295,12 @@
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
+							// Stop video when "Close" is clicked
+							var video = $this.find('video').get(0);
+							if (video) {
+								video.pause();
+								video.currentTime = 0;
+							}
 							location.hash = '';
 						});
 
@@ -309,6 +315,15 @@
 			$body.on('click', function(event) {
 
 				// Article visible? Hide.
+				if ($body.hasClass('is-article-visible')) {
+					var $this = $(this);
+					// Stop video when "Close" is clicked
+					var video = $this.find('video').get(0);
+					if (video) {
+						video.pause();
+						video.currentTime = 0;
+					}
+				}
 					if ($body.hasClass('is-article-visible'))
 						$main._hide(true);
 
