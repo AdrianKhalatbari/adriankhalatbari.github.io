@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Adriän Khalatbari</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -47,17 +47,16 @@
 								<!-- Video Section -->
 								<div class="video-container">
 									<div class="embed-responsive embed-responsive-16by9">
-										<video class="embed-responsive-item" controls>
-											<source src="images/test2.mp4" type="video/mp4">
+										<video class="embed-responsive-item" id="introVideo" controls>
+											<source src="images/CV-Presentation.mp4" type="video/mp4">
 											Your browser does not support the video tag.
 										</video>
 									</div>
 								</div>
-								
-    
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								</br>
+								<p>In this video, I first introduced myself, and then I delved into my professional experiences as a Full Stack Developer and Data Analytics at Visitory in detail.</p>
+								<p>The video covers my experiences in analyzing social media data and setting up a dashboard to display various statistics in charts, tables, and figures.</p>
+								<p>You can also click <a href="#work">here</a> to see more about my other experiences.</p>
 							</article>
 
 						<!-- Work -->
@@ -366,6 +365,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- Change video playback speed -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var video = document.getElementById("introVideo");
+					video.playbackRate = 1.5;
+				});
+			</script>
 
 	</body>
 </html>
