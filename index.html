@@ -47,7 +47,7 @@
 								<!-- Video Section -->
 								<div class="video-container">
 									<div class="embed-responsive embed-responsive-16by9">
-										<video class="embed-responsive-item" controls>
+										<video class="embed-responsive-item" id="introVideo" controls>
 											<source src="images/test2.mp4" type="video/mp4">
 											Your browser does not support the video tag.
 										</video>
@@ -366,6 +366,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- Change video playback speed -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var video = document.getElementById("introVideo");
+					video.playbackRate = 1.5;
+				});
+			</script>
 
 	</body>
 </html>
