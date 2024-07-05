@@ -1324,6 +1324,17 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
+		/*  write a media query to change the size of the logo when the screen is smaller than 780px */
+		@media screen and (max-width: 780px) {
+			#header .logo .mainPic {
+				width: 5rem;
+				height: 5rem;
+				line-height: 5.5rem;
+				border: solid 1px #ffffff;
+				border-radius: 100%;
+			}
+		}
+
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
