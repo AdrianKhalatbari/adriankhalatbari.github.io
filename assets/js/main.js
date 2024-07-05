@@ -301,7 +301,14 @@
 								video.pause();
 								video.currentTime = 0;
 							}
-							location.hash = '';
+							var id = $this.attr('id')
+							if (id.includes('work-')) { 
+								// Back to work page from work experience articles
+								location.hash = '#work';
+							} else {
+								// Hide article and show the main page
+								location.hash = '';
+							}
 						});
 
 				// Prevent clicks from inside article from bubbling.
